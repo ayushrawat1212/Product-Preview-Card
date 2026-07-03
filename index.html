@@ -16,7 +16,16 @@
     <main>
         <article>
             <div class="img-container">
-                <img src="./images/image-product-mobile.jpg" alt="Gabrielle Essence Eau De Parfum perfume bottle" /> 
+                <!-- For Responsive Images -->
+                <picture>
+                    <source 
+                        media="(min-width: 550px)"
+                        srcset="./images/image-product-desktop.jpg" >
+
+                    <img class="product-image"  src="./images/image-product-mobile.jpg" 
+                            alt="Gabrielle Essence Eau De Parfum perfume bottle" /> 
+                </picture>
+                
             </div>
 
             <div class="content-container">

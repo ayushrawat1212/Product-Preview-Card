@@ -23,15 +23,15 @@ article {
     background-color: white;
     width: 100%;
     max-width: 360px;
-    border-radius: 10px;
+    border-radius: 0.75rem; /*10px*/
     overflow: hidden;
 }
 
 .img-container {
-    height: 250px;
+    height: 16rem;  /*250px*/
 }
 
-img {
+.product-image {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -39,20 +39,20 @@ img {
 }
 
 .content-container {
-    padding: 25px;
+    padding: 1.5rem;   /*25px*/
 }
 
 .category {
     font-weight: 500;
-    letter-spacing: 4px;
+    letter-spacing: 0.25rem;  /*4px*/
     color: hsl(228, 12%, 48%);
-    margin-bottom: 2px;
+    margin-bottom: 2px;     
 }
 
 .description {
     color: hsl(228, 12%, 48%);
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;    /*20px*/
     line-height: 1.5rem;
 
 }
@@ -62,12 +62,12 @@ img {
     gap: 1rem;
     
     
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .current-price {
     color: hsl(158, 36%, 37%);
-    font-size: 35px;
+    font-size: 2.25rem;   /*35*/
     font-weight: 700;
 }
 
@@ -79,9 +79,9 @@ img {
 
 .button {
 
-    height: 45px;
+    height: 2.85rem;   /*45*/
     width: 100%;
-    border-radius: 7px;
+    border-radius: 0.5rem;
     display: flex;
    
     justify-content: center;
@@ -100,11 +100,34 @@ img {
 }
 
 .button img {
-    height: 15px;
-    width: 15px;
+    height: 1rem;   /*15*/
+    width: 1rem;
 
 }
 
 .button:hover {
     background-color: hsl(158, 42%, 18%);
+}
+
+
+/* Desktop Layout */
+
+@media (min-width: 550px) {
+    article {
+        display: flex;
+        flex-direction: row;
+
+        max-width: 600px;
+    }
+
+    .img-container {
+        flex: 1;
+        height: auto;
+    }
+
+    .content-container {
+        flex: 1;
+        padding: 2.25rem;  
+    }
+    
 }
